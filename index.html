@@ -159,30 +159,25 @@
 
     <section class="form-section" id="lead-form">
       <h3>Integrity, Craftsmanship, and the Best Service are Foundational for us.</h3>
-        <p>Reaching out is completely free, it is postponing that could be costly.</p>
+      <p>Reaching out is completely free, it is postponing that could be costly.</p>
        
-      <form action="https://formsubmit.co/claytonnkey@gmail.com" method="POST">
-  <!-- Required Inputs -->
-  <input type="text" name="name" placeholder="Your Name*" required />
-  <input type="text" name="location" placeholder="Your Location*" required />
-  <input type="text" name="contact" placeholder="Phone or Email*" required />
-  <textarea name="details" placeholder="What’s going on with your property?*" rows="4" required></textarea>
+      <form action="https://formsubmit.co/claytonnkey@gmail.com" method="POST" id="contact-form">
+        <input type="text" name="name" placeholder="Your Name*" required />
+        <input type="text" name="location" placeholder="Your Location*" required />
+        <input type="text" name="contact" placeholder="Phone or Email*" required />
+        <textarea name="details" placeholder="What’s going on with your property?*" rows="4" required></textarea>
+        <select name="preferred_contact">
+          <option value="">Preferred contact method</option>
+          <option value="Phone">Phone</option>
+          <option value="Email">Email</option>
+        </select>
 
-  <!-- Optional Dropdown -->
-  <select name="preferred_contact">
-    <option value="">Preferred contact method</option>
-    <option value="Phone">Phone</option>
-    <option value="Email">Email</option>
-  </select>
+        <input type="hidden" name="_subject" value="New Quote Request from Website" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
 
-  <!-- Optional Hidden Fields -->
-  <input type="hidden" name="_subject" value="New Quote Request from Website">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="box">
-  <input type="hidden" name="_next" value="Key Solutions/thank-you.html">
-
-  <!-- Submit Button -->
-  <button type="submit">Tell Me My Best Option</button>
+        <button type="submit" class="btn-primary">Tell Me My Best Option</button>
       </form>
     </section>
 
@@ -201,3 +196,4 @@
 
 </body>
 </html>
+
